@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>food blog</title>
+  </head>
+  <body class="bg-black">
+    <div class="loading-screen bg-black vh-100 text-white vw-100 text-center">
+      <div><i class="fa-solid fa-rotate fs-1"></i></div>
+    </div>
+    <section class="website-content">
+      <!-- Side Menu -->
+      <aside class="position-fixed top-0 h-100 d-flex aside-menu z-3">
+        <!-- Content -->
+        <div
+          class="menu-content bg-black py-4 ps-3 text-white fs-5 d-flex flex-column justify-content-between"
+        >
+          <ul class="menu-list-text list-none d-flex flex-column gap-3">
+            <li onclick="searchPage()" class="position-relative">Search</li>
+            <li onclick="getAllCat()" class="position-relative">Categories</li>
+            <li onclick="getAllAreas()" class="position-relative">Area</li>
+            <li onclick="getAllIngredients()" class="position-relative">
+              Ingredients
+            </li>
+            <li onclick="contactUs()" class="position-relative">Contact Us</li>
+          </ul>
+          <div class="social-media-links">
+            <ul class="list-none d-flex gap-3 mb-2">
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-solid fa-globe"></i></li>
+            </ul>
+            <p class="fs-6">Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+        <!-- icons -->
+        <div
+          class="menu-icons py-4 d-flex flex-column justify-content-between align-items-center fs-5 bg-white"
+        >
+          <img
+            onclick="showMealHomePage()"
+            src="images/logo.png"
+            alt="logo-icon"
+            class="img-fluid"
+            style="cursor: pointer"
+          />
+          <i class="menu-icon-bar fa-solid fa-bars fs-2"></i>
+          <ul class="d-flex list-none gap-1">
+            <li><i class="fa-solid fa-globe"></i></li>
+            <li><i class="fa-solid fa-link"></i></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Page Content -->
+      <main>
+        <ul class="list-unstyled link-success"></ul>
+        <section class="container text-white py-5">
+          <div>
+            <div id="App" class="row g-3"></div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- Js Files -->
+    <script
+      src="https://kit.fontawesome.com/06a227b477.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

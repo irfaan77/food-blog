@@ -1,0 +1,45 @@
+.list-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.aside-menu {
+  width: 20%;
+}
+.menu-content {
+  width: 80%;
+}
+.menu-icons {
+  width: 20%;
+}
+.fa-brands,
+.fa-solid {
+  cursor: pointer;
+}
+.menu-list-text li {
+  top: 300px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.menu-list-text li:hover {
+  color: red;
+}
+.website-content {
+  opacity: 0;
+}
+
+.card-overlay {
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.meal-card:hover .card-overlay {
+  top: 0;
+  opacity: 0.8;
+}
+
+.meal-card {
+  cursor: pointer;
+}
